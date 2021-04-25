@@ -1,0 +1,26 @@
+.page-header {
+  background-color: $dark;
+}
+
+.page-header__contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 1411px;
+  margin: 0 auto;
+  padding-top: 33px;
+
+  @media (max-width: $desktop-width) {
+    width: 720px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 288px;
+  }
+}
+
+.page-header__logo-image {
+  @media (max-width: $tablet-width) {
+    width: 38px;
+    height: 38px;
+  }
+}

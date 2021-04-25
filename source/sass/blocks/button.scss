@@ -1,0 +1,14 @@
+.button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+  padding: 14px 13px 14px 12px;
+  border: 1px solid $white;
+  border-radius: 5px;
+  background-color: transparent;
+}

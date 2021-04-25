@@ -8,7 +8,24 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
-  <h1>Печатные платы</h1>
-  <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+  <header class="page-header">
+    <div class="page-header__contacts">
+      <picture>
+        <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+        <img class="page-header__logo-image" src="img/logo.svg" width="202" height="52" alt="Логотип сайта">
+      </picture>
+      <div class="page-header__contacts-list contacts-header">
+        <div class="contacts-header__link-wrapper">
+          <img class="contacts-header__link-icon contacts-header__link-icon--mail" src="img/icon-mail.svg" width="19" height="14">
+          <a class="contacts-header__link contacts-header__link--mail" href="#">info@sd.ru</a>
+        </div>
+        <div class="contacts-header__link-wrapper">
+          <img class="contacts-header__link-icon contacts-header__link-icon--tel" src="img/icon-tel.svg" width="18" height="18">
+          <a class="contacts-header__link contacts-header__link--tel" href="#">+7 (495) 000 52 52</a>
+        </div>
+        <button class="button contacts-header__button" type="button">заказать звонок</button>
+      </div>
+    </div>
+  </header>
 </body>
 </html>
