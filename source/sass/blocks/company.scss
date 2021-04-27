@@ -1,0 +1,41 @@
+.company {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 110px;
+
+  @media (max-width: $desktop-width) {
+    width: 720px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 288px;
+  }
+}
+
+.company__wrapper {
+  padding-left: 186px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.company__wrapper h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $grey;
+}
+
+.company__wrapper p {
+  line-height: 22px;
+  color: $grey;
+}
+
+.company__button {
+  color: $blue;
+  border-color: $blue;
+  padding-left: 50px;
+  padding-right: 50px;
+}
