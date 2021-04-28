@@ -1,0 +1,88 @@
+.form {
+  background-color: $blue;
+}
+
+.form__container {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 113px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__image-wrapper {
+  width: 511px;
+}
+
+.form__wrapper {
+  width: 570px;
+}
+
+.form__wrapper h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $white;
+}
+
+.form__wrapper p {
+  line-height: 22px;
+  color: $white;
+}
+
+.form__field {
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form__field input {
+  width: 270px;
+  line-height: 22px;
+  color: $white;
+  background-color: rgba($white, 0.1);
+  padding: 14px 16px;
+  margin-bottom: 40px;
+  border: 1px solid transparent;
+
+  &::placeholder {
+    line-height: 22px;
+    color: $white;
+  }
+}
+
+.form__textarea textarea {
+  width: 570px;
+  height: 154px;
+  line-height: 22px;
+  background-color: rgba($white, 0.1);
+  color: $white;
+  padding: 14px 16px;
+  margin-bottom: 43px;
+  border: 1px solid transparent;
+
+  &::placeholder {
+    line-height: 22px;
+    color: $white;
+  }
+}
+
+.form__submit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__button {
+  width: 270px;
+}
+
+.form__submit p {
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  opacity: 0.8;
+  width: 230px;
+}
