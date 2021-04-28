@@ -1,0 +1,122 @@
+.products {
+  background-color: $dark;
+}
+
+.products__wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 93px;
+  padding-bottom: 127px;
+
+  @media (max-width: $desktop-width) {
+    width: 715px;
+    padding-top: 53px;
+    padding-bottom: 78px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
+    padding-top: 53px;
+    padding-bottom: 64px;
+  }
+}
+
+.products__wrapper h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $white;
+
+  @media (max-width: $desktop-width) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.products__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.products__list-item {
+  width: 370px;
+
+  @media (max-width: $desktop-width) {
+    width: 715px;
+    margin-bottom: 46px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
+    margin-bottom: 30px;
+  }
+}
+
+.products__list-link {
+  text-decoration: none;
+  position: relative;
+}
+
+.products__list-link p {
+  position: absolute;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $white;
+  width: 170px;
+  top: 30px;
+  left: 40px;
+}
+
+.products__image-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 63px;
+    height: 63px;
+    background-color: $blue;
+    bottom: 6px;
+    right: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    background-image: url("../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    bottom: 31px;
+    right: 24px;
+  }
+}
+
+.products__image {
+  opacity: 0.2;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+
+  @media (max-width: $desktop-width) {
+    width: 715px;
+    height: 256px;
+    object-fit: cover;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
+  }
+}
