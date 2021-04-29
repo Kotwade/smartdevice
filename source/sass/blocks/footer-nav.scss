@@ -1,6 +1,15 @@
 .footer-nav__wrapper {
   display: flex;
   justify-content: space-between;
+  width: 516px;
+
+  @media (max-width: $desktop-width) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 288px;
+  }
 }
 
 .footer-nav__list {

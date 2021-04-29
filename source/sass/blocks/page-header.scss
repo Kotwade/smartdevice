@@ -34,13 +34,32 @@
   width: 1494px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding-top: 173px;
   padding-bottom: 108px;
+
+  @media (max-width: $desktop-width) {
+    width: 720px;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    width: 301px;
+  }
 }
 
 .page-header__title {
   width: 718px;
+
+  @media (max-width: $desktop-width) {
+    width: 470px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 301px;
+    order: 2;
+  }
 }
 
 .page-header__title h2 {
@@ -51,12 +70,32 @@
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: $white;
+
+  @media (max-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 47px;
+  }
 }
 
 .page-header__title p {
   font-size: 22px;
   line-height: 34px;
   color: $white;
+
+  @media (max-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 
 .page-header__title-button {
@@ -65,4 +104,28 @@
   line-height: 19px;
   border: none;
   padding: 15px 32px 16px 24px;
+}
+
+.page-header__image-container {
+  @media (max-width: $desktop-width) {
+    width: 240px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 301px;
+    order: 1;
+  }
+}
+
+.page-header__image {
+  @media (max-width: $desktop-width) {
+    width: 240px;
+    height: 340px;
+    object-fit: cover;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 301px;
+    height: 220px;
+  }
 }

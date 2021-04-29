@@ -9,14 +9,34 @@
   padding-bottom: 113px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $desktop-width) {
+    width: 591px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
+  }
 }
 
 .form__image-wrapper {
   width: 511px;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .form__wrapper {
   width: 570px;
+
+  @media (max-width: $desktop-width) {
+    width: 591px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
+  }
 }
 
 .form__wrapper h3 {
@@ -25,6 +45,16 @@
   font-size: 36px;
   line-height: 51px;
   color: $white;
+
+  @media (max-width: $desktop-width) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 39px;
+  }
 }
 
 .form__wrapper p {
@@ -37,6 +67,14 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (max-width: $desktop-width) {
+    width: 591px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
+  }
 }
 
 .form__field input {
@@ -51,6 +89,15 @@
   &::placeholder {
     line-height: 22px;
     color: $white;
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 280px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
+    margin-bottom: 30px;
   }
 }
 
@@ -68,15 +115,29 @@
     line-height: 22px;
     color: $white;
   }
+
+  @media (max-width: $desktop-width) {
+    width: 591px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
+    margin-bottom: 30px;
+  }
 }
 
 .form__submit {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .form__button {
   width: 270px;
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
+  }
 }
 
 .form__submit p {
