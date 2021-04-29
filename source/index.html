@@ -36,6 +36,25 @@
         <img class="page-header__image" src="img/platy.png" width="705" height="515" alt="Печатные платы">
       </div>
     </div>
+    <section class="popup">
+      <div class="popup__wrapper">
+        <h3>Закажите звонок</h3>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form class="popup__form" method="POST" action="https://echo.htmlacademy.ru">
+          <div class="popup__form-field">
+            <label>
+              <input type="text" name="name" placeholder="Имя" required>
+            </label>
+            <label>
+              <input type="tel" name="tel" placeholder="Телефон" required>
+            </label>
+            <textarea name="question" placeholder="Ваш вопрос"></textarea>
+          </div>
+          <button class="button popup__button" type="submit">Отправить</button>
+        </form>
+      </div>
+      <button class="popup__button-cross" type="button"></button>
+    </section>
   </header>
   <main class="page-main">
     <section class="advantages">

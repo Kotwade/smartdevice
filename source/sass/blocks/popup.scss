@@ -1,0 +1,74 @@
+.popup {
+  position: absolute;
+  width: 490px;
+  top: 136px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $blue;
+  display: none;
+}
+
+.popup__wrapper {
+  padding: 33px 39px 36px 39px;
+}
+
+.popup__wrapper h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  color: $white;
+}
+
+.popup__wrapper p {
+  line-height: 22px;
+  color: $white;
+}
+
+.popup__form-field input {
+  width: 411px;
+  line-height: 22px;
+  color: $white;
+  background-color: rgba($white, 0.1);
+  padding: 14px 24px;
+  margin-bottom: 30px;
+  border: 1px solid transparent;
+
+  &::placeholder {
+    line-height: 22px;
+    color: $white;
+  }
+}
+
+.popup__form-field textarea {
+  width: 411px;
+  height: 104px;
+  line-height: 22px;
+  background-color: rgba($white, 0.1);
+  color: $white;
+  padding: 13px 24px;
+  margin-bottom: 30px;
+  border: 1px solid transparent;
+
+  &::placeholder {
+    line-height: 22px;
+    color: $white;
+  }
+}
+
+.popup__button {
+  width: 411px;
+}
+
+.popup__button-cross {
+  position: absolute;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  width: 17px;
+  height: 17px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
