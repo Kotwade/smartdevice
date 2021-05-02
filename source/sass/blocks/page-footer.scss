@@ -3,12 +3,12 @@
 }
 
 .page-footer__wrapper {
-  width: 1412px;
+  width: 1426px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding-bottom: 55px;
+  padding-bottom: 60px;
 
   @media (max-width: $desktop-width) {
     width: 717px;
@@ -21,6 +21,7 @@
 
 .page-footer__socials {
   width: 216px;
+  margin-left: 13px;
 
   @media (max-width: $desktop-width) {
     width: 717px;
@@ -40,6 +41,7 @@
   display: flex;
   justify-content: space-between;
   width: 112px;
+  margin-top: 48px;
 
   @media (max-width: $tablet-width) {
     margin-top: 31px;
@@ -82,12 +84,14 @@
   font-size: 15px;
   line-height: 16px;
   color: $dark;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
 }
 
 .page-footer__copyright {
-  width: 1412px;
+  width: 1425px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
 
@@ -107,4 +111,17 @@
   text-transform: uppercase;
   color: $dark;
   opacity: 0.5;
+}
+
+.page-footer__copyright-first {
+  margin-left: 13px;
+}
+
+.page-footer__copyright-second {
+  margin-left: 74px;
+  margin-right: 142px;
+}
+
+.page-footer__copyright-third {
+  margin-right: auto;
 }

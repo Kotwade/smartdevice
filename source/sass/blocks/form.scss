@@ -3,10 +3,10 @@
 }
 
 .form__container {
-  width: 1170px;
+  width: 1205px;
   margin: 0 auto;
-  padding-top: 96px;
-  padding-bottom: 113px;
+  padding-top: 91px;
+  padding-bottom: 95px;
   display: flex;
   justify-content: space-between;
 
@@ -20,6 +20,7 @@
 }
 
 .form__image-wrapper {
+  margin-top: 70px;
   width: 511px;
 
   @media (max-width: $desktop-width) {
@@ -28,7 +29,7 @@
 }
 
 .form__wrapper {
-  width: 570px;
+  width: 580px;
 
   @media (max-width: $desktop-width) {
     width: 591px;
@@ -45,6 +46,9 @@
   font-size: 36px;
   line-height: 51px;
   color: $white;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
 
   @media (max-width: $desktop-width) {
     font-size: 32px;
@@ -60,6 +64,9 @@
 .form__wrapper p {
   line-height: 22px;
   color: $white;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 48px;
 }
 
 .form__field {
@@ -108,8 +115,9 @@
   background-color: rgba($white, 0.1);
   color: $white;
   padding: 14px 16px;
-  margin-bottom: 43px;
+  margin-bottom: 21px;
   border: 1px solid transparent;
+  resize: none;
 
   &::placeholder {
     line-height: 22px;
@@ -134,6 +142,7 @@
 
 .form__button {
   width: 270px;
+  align-self: center;
 
   @media (max-width: $tablet-width) {
     width: 290px;

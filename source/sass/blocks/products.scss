@@ -5,8 +5,8 @@
 .products__wrapper {
   width: 1170px;
   margin: 0 auto;
-  padding-top: 93px;
-  padding-bottom: 127px;
+  padding-top: 88px;
+  padding-bottom: 121px;
 
   @media (max-width: $desktop-width) {
     width: 715px;
@@ -27,6 +27,10 @@
   font-size: 36px;
   line-height: 51px;
   color: $white;
+  margin: 0;
+  padding: 0;
+  margin-left: 8px;
+  margin-bottom: 52px;
 
   @media (max-width: $desktop-width) {
     font-size: 32px;
@@ -46,6 +50,7 @@
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  margin-left: 8px;
 }
 
 .products__list-item {

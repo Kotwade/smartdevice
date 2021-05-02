@@ -1,14 +1,22 @@
 .contacts-header {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   width: 659px;
   padding: 0;
   margin: 0;
-  align-items: center;
 
   @media (max-width: $desktop-width) {
     width: 72px;
   }
+}
+
+.contacts-header__link-wrapper {
+  padding-top: 15px;
+}
+
+.contacts-header__link-wrapper--tel {
+  margin-left: 88px;
+  margin-right: auto;
 }
 
 .contacts-header__link {
@@ -16,6 +24,8 @@
   line-height: 18px;
   color: $white;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 
   @media (max-width: $desktop-width) {
     display: none;
@@ -23,6 +33,8 @@
 }
 
 .contacts-header__link-icon--mail {
+  margin-right: 11px;
+
   @media (max-width: $desktop-width) {
     width: 25px;
     height: 19px;
@@ -30,6 +42,8 @@
 }
 
 .contacts-header__link-icon--tel {
+  margin-right: 6px;
+
   @media (max-width: $desktop-width) {
     width: 24px;
     height: 24px;
@@ -37,6 +51,9 @@
 }
 
 .contacts-header__button {
+  width: 180px;
+  align-self: center;
+
   @media (max-width: $desktop-width) {
     display: none;
   }
