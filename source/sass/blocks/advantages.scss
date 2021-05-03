@@ -8,10 +8,12 @@
 
   @media (max-width: $desktop-width) {
     width: 720px;
+    padding-top: 54px;
   }
 
   @media (max-width: $tablet-width) {
     width: 290px;
+    padding-top: 37px;
   }
 }
 
@@ -28,13 +30,39 @@
   }
 
   @media (max-width: $desktop-width) {
-    padding: 70px 26px 12px 27px;
+    padding: 66px 19px 4px 27px;
     width: 345px;
+    min-height: 306px;
   }
 
   @media (max-width: $tablet-width) {
-    padding: 71px 12px 20px 27px;
+    padding: 71px 10px 9px 27px;
     width: 290px;
+    min-height: 310px;
+    margin-bottom: 20px;
+  }
+}
+
+.advantages__block--time {
+  padding: 98px 36px 49px 51px;
+
+  @media (max-width: $desktop-width) {
+    padding: 66px 19px 4px 27px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 73px;
+  }
+}
+
+.advantages__block--second-line {
+  @media (max-width: $desktop-width) {
+    min-height: 232px;
+    padding: 70px 19px 4px 27px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 70px 10px 4px 27px;
   }
 }
 
@@ -46,6 +74,11 @@
   color: $blue;
   margin: 0;
   padding: 0;
+
+  @media (max-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .advantages__block--second-line h3 {
@@ -55,6 +88,16 @@
 .advantages__block p {
   line-height: 22px;
   color: $grey;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 8px;
+  }
+}
+
+.advantages__block--second-line p {
+  @media (max-width: $tablet-width) {
+    margin-top: 15px;
+  }
 }
 
 .advantages__block:hover h3 {

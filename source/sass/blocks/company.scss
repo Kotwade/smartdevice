@@ -2,14 +2,18 @@
   width: 1170px;
   margin: 0 auto;
   padding-top: 74px;
-  padding-bottom: 110px;
+  padding-bottom: 108px;
 
   @media (max-width: $desktop-width) {
     width: 720px;
+    padding-top: 29px;
+    padding-bottom: 84px;
   }
 
   @media (max-width: $tablet-width) {
     width: 288px;
+    padding-top: 40px;
+    padding-bottom: 63px;
   }
 }
 
@@ -30,6 +34,16 @@
   margin: 0;
   padding: 0;
   margin-bottom: 21px;
+
+  @media (max-width: $desktop-width) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 39px;
+  }
 }
 
 .company__wrapper p {
@@ -37,7 +51,24 @@
   color: $grey;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-top: 20px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 33px;
+    margin-top: 25px;
+  }
+}
+
+.company__wrapper span {
+  line-height: 22px;
+  color: $grey;
+  margin: 0;
+  padding: 0;
+  display: block;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .company__button {
@@ -45,5 +76,9 @@
   border-color: $blue;
   padding-left: 50px;
   padding-right: 50px;
-  margin-top: 18px;
+  margin-top: 40px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+  }
 }

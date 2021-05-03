@@ -6,17 +6,33 @@
   margin: 0;
 
   @media (max-width: $desktop-width) {
-    width: 72px;
+    width: 89px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 78px;
   }
 }
 
 .contacts-header__link-wrapper {
   padding-top: 15px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 7px;
+  }
 }
 
 .contacts-header__link-wrapper--tel {
   margin-left: 88px;
   margin-right: auto;
+
+  @media (max-width: $desktop-width) {
+    margin-left: 22px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 12px;
+  }
 }
 
 .contacts-header__link {

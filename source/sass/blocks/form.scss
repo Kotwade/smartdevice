@@ -12,10 +12,12 @@
 
   @media (max-width: $desktop-width) {
     width: 591px;
+    padding-top: 80px;
   }
 
   @media (max-width: $tablet-width) {
     width: 290px;
+    padding-top: 30px;
   }
 }
 
@@ -53,11 +55,13 @@
   @media (max-width: $desktop-width) {
     font-size: 32px;
     line-height: 45px;
+    margin-bottom: 16px;
   }
 
   @media (max-width: $tablet-width) {
     font-size: 28px;
     line-height: 39px;
+    margin-bottom: 13px;
   }
 }
 
@@ -67,6 +71,14 @@
   margin: 0;
   padding: 0;
   margin-bottom: 48px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 53px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .form__field {
@@ -126,11 +138,13 @@
 
   @media (max-width: $desktop-width) {
     width: 591px;
+    height: 161px;
   }
 
   @media (max-width: $tablet-width) {
     width: 290px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    height: 104px;
   }
 }
 
