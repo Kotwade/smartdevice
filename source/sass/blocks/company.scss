@@ -3,6 +3,31 @@
   margin: 0 auto;
   padding-top: 74px;
   padding-bottom: 108px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/year.jpg");
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 317px;
+    top: 79px;
+    left: -22px;
+    z-index: -1;
+
+    @media (max-width: $desktop-width) {
+      top: 24px;
+      left: -33px;
+      width: 251px;
+      height: 362px;
+      background-size: 100%;
+    }
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
 
   @media (max-width: $desktop-width) {
     width: 720px;

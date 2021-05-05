@@ -66,6 +66,7 @@
   width: 718px;
   margin-left: 84px;
   margin-top: 59px;
+  position: relative;
 
   @media (max-width: $desktop-width) {
     width: 470px;
@@ -190,5 +191,20 @@
   @media (max-width: $tablet-width) {
     width: 301px;
     height: 220px;
+  }
+}
+
+.page-header__scroll {
+  position: absolute;
+  top: 420px;
+  left: -34px;
+  transform: rotate(-90deg);
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  opacity: 0.5;
+
+  @media (max-width: $desktop-width) {
+    display: none;
   }
 }

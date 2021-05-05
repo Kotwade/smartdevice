@@ -24,9 +24,14 @@
   border-left: 2px solid $blue;
   margin-bottom: 30px;
   min-height: 299px;
+  position: relative;
 
   &:hover {
     background-color: $blue;
+  }
+
+  &:hover svg {
+    fill: $white;
   }
 
   @media (max-width: $desktop-width) {
@@ -45,6 +50,7 @@
 
 .advantages__block--time {
   padding: 98px 36px 49px 51px;
+  position: relative;
 
   @media (max-width: $desktop-width) {
     padding: 66px 19px 4px 27px;
@@ -52,6 +58,18 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 73px;
+  }
+}
+
+.advantages__block-icon {
+  fill: $blue;
+  position: absolute;
+  top: 42px;
+  left: 50px;
+
+  @media (max-width: $desktop-width) {
+    top: 24px;
+    left: 25px;
   }
 }
 
