@@ -1,0 +1,11 @@
+.container {
+  background-image: url("../img/advantages-background-1.png"), url("../img/advantages-background-2.png"), url("../img/advantages-background-3.png"), url("../img/advantages-background-4.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 558px 145px, 0 448px, 198px 43px, 1553px 392px;
+  background-size: 46%, 30%, 18%, 18%;
+
+  @media (max-width: $desktop-width) {
+    background-position: 215px 97px;
+    background-size: 112%, 0, 0, 0;
+  }
+}
