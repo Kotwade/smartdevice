@@ -47,18 +47,26 @@
   margin: 0 auto;
   padding-top: 165px;
   padding-bottom: 101px;
+  background-image: url("../img/background-header.png");
+  background-repeat: no-repeat;
+  background-position: -175px -96px;
+  background-size: 123%;
 
   @media (max-width: $desktop-width) {
     width: 720px;
     position: relative;
     padding-top: 51px;
     padding-bottom: 163px;
+    background-position: -400px -211px;
+    background-size: 211%;
   }
 
   @media (max-width: $tablet-width) {
     width: 301px;
     padding-top: 166px;
     padding-bottom: 70px;
+    background-position: -637px -198px;
+    background-size: 482%;
   }
 }
 
@@ -162,11 +170,6 @@
 }
 
 .page-header__image-container {
-  background-image: url("../img/background-header.png");
-  background-repeat: no-repeat;
-  background-position: -1000px -230px;
-  background-size: 260% auto;
-
   @media (max-width: $desktop-width) {
     width: 240px;
     position: absolute;

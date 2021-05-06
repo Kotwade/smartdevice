@@ -1,5 +1,9 @@
 .form {
   background-color: $blue;
+  background-image: url("../img/form-background-1.png"), url("../img/form-background-2.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 1641px 42px, 1577px 288px;
+  background-size: 14%, 18%;
 }
 
 .form__container {
