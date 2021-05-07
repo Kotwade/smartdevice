@@ -13,6 +13,9 @@
 
 .page-body {
   min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
   background-color: $white;
   color: $black;
   font-family: "PT Mono", "Courier New", monospace;
