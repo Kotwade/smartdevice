@@ -12,6 +12,14 @@
   }
 }
 
+.footer-nav__header {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .footer-nav__list {
   list-style: none;
   margin: 0;

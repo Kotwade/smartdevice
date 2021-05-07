@@ -5,6 +5,12 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: $blue;
+  z-index: 30;
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup--hidden {
   display: none;
 }
 

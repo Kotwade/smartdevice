@@ -141,6 +141,8 @@
   margin-top: 44px;
   margin-left: 98px;
   width: 407px;
+  text-decoration: none;
+  display: block;
 
   @media (max-width: $desktop-width) {
     margin-left: 50px;
@@ -163,6 +165,7 @@
   margin-left: 3px;
   width: 287px;
   display: none;
+  text-decoration: none;
 
   @media (max-width: $tablet-width) {
     display: block;
@@ -206,6 +209,7 @@
   line-height: 16px;
   color: $white;
   opacity: 0.5;
+  text-decoration: none;
 
   @media (max-width: $desktop-width) {
     display: none;

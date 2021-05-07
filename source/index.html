@@ -30,15 +30,15 @@
       <div class="page-header__title">
         <h2>Печатные платы</h2>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <button class="button page-header__title-button" type="button">Получить бесплатную консультацию</button>
-        <button class="button page-header__title-button--mobile" type="button">Бесплатная консультация</button>
-        <span class="page-header__scroll">Скролл вниз</span>
+        <a class="button page-header__title-button" href="#form">Получить бесплатную консультацию</a>
+        <a class="button page-header__title-button--mobile" href="#form">Бесплатная консультация</a>
+        <a class="page-header__scroll" href="#advantages">Скролл вниз</a>
       </div>
       <div class="page-header__image-container">
         <img class="page-header__image" src="img/platy.png" width="705" height="515" alt="Печатные платы">
       </div>
     </div>
-    <section class="popup">
+    <section class="popup popup--hidden">
       <div class="popup__wrapper">
         <h3>Закажите звонок</h3>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
@@ -57,10 +57,11 @@
       </div>
       <button class="popup__button-cross" type="button"></button>
     </section>
+    <div class="overlay overlay--hidden"></div>
   </header>
   <main class="page-main">
     <div class="container">
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <div class="advantages__wrapper">
           <div class="advantages__block advantages__block--time">
             <svg class="advantages__block-icon" width="29" height="35">
@@ -133,7 +134,7 @@
         </ul>
       </div>
     </section>
-    <section class="form">
+    <section class="form" id="form">
       <div class="form__container">
         <div class="form__image-wrapper">
           <img class="form__image" src="img/paper-airplane.png" width="511" height="288" alt="Бумажный самолёт">
@@ -171,9 +172,12 @@
         </div>
       </div>
       <div class="page-footer__container">
-        <div class="page-footer__nav footer-nav">
-          <h3>Разделы сайта</h3>
-          <div class="footer-nav__wrapper">
+        <div class="page-footer__nav footer-nav accordion">
+          <div class="footer-nav__header">
+            <h3>Разделы сайта</h3>
+            <button class="accordion__toggle" type="button"><span class="visually-hidden">Показать/Спрятать разделы сайта</span></button>
+          </div>
+          <div class="footer-nav__wrapper accordion__pane">
             <ul class="footer-nav__list">
               <li><a class="footer-nav__list-item" href="#">О компании</a></li>
               <li><a class="footer-nav__list-item" href="#">Продукты</a></li>
@@ -187,9 +191,12 @@
             </ul>
           </div>
         </div>
-        <div class="page-footer__contacts contacts-footer">
-          <h3>Наш офис</h3>
-          <ul class="contacts-footer__list">
+        <div class="page-footer__contacts contacts-footer accordion">
+          <div class="contacts-footer__header">
+            <h3>Наш офис</h3>
+            <button class="accordion__toggle" type="button"><span class="visually-hidden">Показать/Спрятать разделы сайта</span></button>
+          </div>
+          <ul class="contacts-footer__list accordion__pane">
             <li class="contacts-footer__list-item">г. Мытищи, Олимпийский проспект, д.10</li>
             <li class="contacts-footer__list-item">+7 (495) 589-40-50</li>
             <li class="contacts-footer__list-item">+7 (925) 003-87-67</li>
@@ -205,5 +212,6 @@
       <p class="page-footer__copyright-fourth">Developed by wow studio </p>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+.accordion__toggle {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  background-image: url("../img/icon-minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.accordion__toggle--inactive {
+  background-image: url("../img/icon-plus.svg");
+}
+
+.accordion__pane--hidden {
+  display: none;
+}
