@@ -9,6 +9,7 @@
 
   @media (max-width: $tablet-width) {
     width: 288px;
+    margin-bottom: 40px;
   }
 }
 
@@ -16,7 +17,6 @@
   @media (max-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 }
 

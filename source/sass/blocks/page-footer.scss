@@ -8,6 +8,7 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 46px;
+    padding-bottom: 26px;
   }
 }
 
@@ -102,6 +103,11 @@
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 18px;
+    margin-bottom: 56px;
+  }
 }
 
 .page-footer__copyright {
@@ -157,4 +163,16 @@
 
 .page-footer__copyright-third {
   margin-right: auto;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+    margin-top: 11px;
+  }
+}
+
+.page-footer__copyright-fourth {
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+    margin-top: 21px;
+  }
 }

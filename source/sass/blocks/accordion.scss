@@ -8,10 +8,16 @@
   background-repeat: no-repeat;
   background-position: center;
   display: none;
+  margin-top: 18px;
 
   @media (max-width: $tablet-width) {
     display: block;
   }
+}
+
+.accordion__toggle--contacts {
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
 .accordion__toggle--inactive {
@@ -19,5 +25,7 @@
 }
 
 .accordion__pane--hidden {
-  display: none;
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
