@@ -14,6 +14,20 @@
 }
 
 .footer-nav__header {
+  position: relative;
+
+  &::before {
+    @media (max-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 310px;
+      height: 1px;
+      background-color: rgba($dark-grey, 0.2);
+      bottom: 28px;
+      left: -12px;
+    }
+  }
+
   @media (max-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
