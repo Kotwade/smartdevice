@@ -145,6 +145,14 @@
   text-decoration: none;
   display: block;
 
+  &:hover {
+    background-color: rgba($blue, 0.5);
+  }
+
+  &:active {
+    background-color: rgba($blue, 0.3);
+  }
+
   @media (max-width: $desktop-width) {
     margin-left: 50px;
     margin-top: 55px;
@@ -167,6 +175,14 @@
   width: 287px;
   display: none;
   text-decoration: none;
+
+  &:hover {
+    background-color: rgba($blue, 0.5);
+  }
+
+  &:active {
+    background-color: rgba($blue, 0.3);
+  }
 
   @media (max-width: $tablet-width) {
     display: block;

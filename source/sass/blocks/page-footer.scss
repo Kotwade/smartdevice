@@ -49,6 +49,16 @@
   }
 }
 
+.page-footer__socials-icon {
+  &:hover {
+    background-color: rgba($blue, 0.5);
+  }
+
+  &:active {
+    background-color: rgba($blue, 0.3);
+  }
+}
+
 .page-footer__socials-container {
   display: flex;
   justify-content: space-between;

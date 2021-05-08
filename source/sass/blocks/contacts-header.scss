@@ -44,8 +44,26 @@
   margin: 0;
   padding: 0;
 
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    color: rgba($blue, 0.5);
+  }
+
   @media (max-width: $desktop-width) {
     display: none;
+  }
+}
+
+.contacts-header__link-icon {
+  &:hover {
+    background-color: rgba($grey, 0.7);
+  }
+
+  &:active {
+    background-color: rgba($grey, 0.3);
   }
 }
 
@@ -70,6 +88,16 @@
 .contacts-header__button {
   width: 180px;
   align-self: center;
+
+  &:hover {
+    color: $blue;
+    border-color: $blue;
+  }
+
+  &:active {
+    color: rgba($blue, 0.5);
+    border-color: rgba($blue, 0.5);
+  }
 
   @media (max-width: $desktop-width) {
     display: none;

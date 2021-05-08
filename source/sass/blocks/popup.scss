@@ -40,6 +40,11 @@
   margin-bottom: 30px;
   border: 1px solid transparent;
 
+  &:hover,
+  :focus {
+    background-color: rgba($white, 0.3);
+  }
+
   &::placeholder {
     line-height: 22px;
     color: $white;
@@ -56,6 +61,11 @@
   margin-bottom: 30px;
   border: 1px solid transparent;
 
+  &:hover,
+  :focus {
+    background-color: rgba($white, 0.3);
+  }
+
   &::placeholder {
     line-height: 22px;
     color: $white;
@@ -64,6 +74,14 @@
 
 .popup__button {
   width: 411px;
+
+  &:hover {
+    background-color: rgba($white, 0.3);
+  }
+
+  &:active {
+    background-color: rgba($white, 0.1);
+  }
 }
 
 .popup__button-cross {
@@ -77,4 +95,12 @@
   top: 20px;
   right: 20px;
   cursor: pointer;
+
+  &:hover {
+    background-color: rgba($white, 0.3);
+  }
+
+  &:active {
+    background-color: rgba($white, 0.1);
+  }
 }

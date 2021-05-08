@@ -32,4 +32,12 @@
   color: $dark;
   opacity: 0.5;
   text-decoration: none;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    color: rgba($blue, 0.5);
+  }
 }

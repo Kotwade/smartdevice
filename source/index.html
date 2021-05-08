@@ -39,7 +39,11 @@
         <a class="page-header__scroll" href="#advantages">Скролл вниз</a>
       </div>
       <div class="page-header__image-container">
-        <img class="page-header__image" src="img/platy.png" width="705" height="515" alt="Печатные платы">
+        <picture>
+          <source type="image/webp" srcset="img/platy.webp 1x, img/platy@2x.webp 2x">
+          <!-- 1x: 705px; 2x: 1410px -->
+          <img class="page-header__image" src="img/platy.png" srcset="img/platy@2x.png 2x" width="705" height="515" alt="Печатные платы">
+        </picture>
       </div>
     </div>
     <section class="popup popup--hidden">
@@ -115,7 +119,11 @@
             <a class="products__list-link" href="#">
               <p>Производство печатных плат</p>
               <div class="products__image-wrapper">
-                <img class="products__image" src="img/product-1.png" width="370" height="620" alt="Производство">
+                <picture>
+                  <source type="image/webp" srcset="img/product-1.webp 1x, img/product-1@2x.webp 2x">
+                  <!-- 1x: 370px; 2x: 740px -->
+                  <img class="products__image" src="img/product-1.png" srcset="img/product-1@2x.png 2x" width="370" height="620" alt="Производство">
+                </picture>
               </div>
             </a>
           </li>
@@ -123,7 +131,11 @@
             <a class="products__list-link" href="#">
               <p>Монтаж печатных плат</p>
               <div class="products__image-wrapper">
-                <img class="products__image" src="img/product-2.png" width="370" height="620" alt="Монтаж">
+                <picture>
+                  <source type="image/webp" srcset="img/product-2.webp 1x, img/product-2@2x.webp 2x">
+                  <!-- 1x: 370px; 2x: 740px -->
+                  <img class="products__image" src="img/product-2.png" srcset="img/product-2@2x.png 2x" width="370" height="620" alt="Монтаж">
+                </picture>
               </div>
             </a>
           </li>
@@ -131,7 +143,11 @@
             <a class="products__list-link products__list-link--last" href="#">
               <p>Комплектующие для светотехники</p>
               <div class="products__image-wrapper">
-                <img class="products__image" src="img/product-3.png" width="370" height="620" alt="Светотехника">
+                <picture>
+                  <source type="image/webp" srcset="img/product-3.webp 1x, img/product-3@2x.webp 2x">
+                  <!-- 1x: 370px; 2x: 740px -->
+                  <img class="products__image" src="img/product-3.png" srcset="img/product-3@2x.png 2x" width="370" height="620" alt="Светотехника">
+                </picture>
               </div>
             </a>
           </li>
@@ -141,7 +157,11 @@
     <section class="form" id="form">
       <div class="form__container">
         <div class="form__image-wrapper">
-          <img class="form__image" src="img/paper-airplane.png" width="511" height="288" alt="Бумажный самолёт">
+          <picture>
+            <source type="image/webp" srcset="img/paper-airplane.webp 1x, img/paper-airplane@2x.webp 2x">
+            <!-- 1x: 511px; 2x: 1022px -->
+            <img class="form__image" src="img/paper-airplane.png" srcset="img/paper-airplane@2x.png" width="511" height="288" alt="Бумажный самолёт">
+          </picture>
         </div>
         <form class="form__wrapper" method="POST" action="https://echo.htmlacademy.ru">
           <h3>Остались вопросы? Задайте их нам!</h3>
@@ -170,9 +190,9 @@
       <div class="page-footer__socials">
         <img class="page-footer__logo" src="img/footer-logo.svg" width="216" height="52" alt="Логотип в футере">
         <div class="page-footer__socials-container">
-          <img class="page-footer__socials-icon" src="img/icon-facebook.svg" width="27" height="27" alt="Фейсбук">
-          <img class="page-footer__socials-icon" src="img/icon-odnoklassniki.svg" width="27" height="27" alt="Однрклассники">
-          <img class="page-footer__socials-icon" src="img/icon-vk.svg" width="27" height="27" alt="Вконтакте">
+          <a href=""><img class="page-footer__socials-icon" src="img/icon-facebook.svg" width="27" height="27" alt="Фейсбук"></a>
+          <a href=""><img class="page-footer__socials-icon" src="img/icon-odnoklassniki.svg" width="27" height="27" alt="Однрклассники"></a>
+          <a href=""><img class="page-footer__socials-icon" src="img/icon-vk.svg" width="27" height="27" alt="Вконтакте"></a>
         </div>
       </div>
       <div class="page-footer__container">

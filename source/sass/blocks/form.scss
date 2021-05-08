@@ -115,6 +115,11 @@
   margin-bottom: 40px;
   border: 1px solid transparent;
 
+  &:hover,
+  :focus {
+    background-color: rgba($white, 0.3);
+  }
+
   &::placeholder {
     line-height: 22px;
     color: $white;
@@ -140,6 +145,11 @@
   margin-bottom: 21px;
   border: 1px solid transparent;
   resize: none;
+
+  &:hover,
+  :focus {
+    background-color: rgba($white, 0.3);
+  }
 
   &::placeholder {
     line-height: 22px;
@@ -167,6 +177,14 @@
 .form__button {
   width: 270px;
   align-self: center;
+
+  &:hover {
+    background-color: rgba($grey, 0.5);
+  }
+
+  &:active {
+    background-color: rgba($grey, 0.3);
+  }
 
   @media (max-width: $tablet-width) {
     width: 290px;

@@ -103,6 +103,14 @@
   padding-right: 50px;
   margin-top: 40px;
 
+  &:hover {
+    background-color: rgba($blue, 0.5);
+  }
+
+  &:active {
+    background-color: rgba($blue, 0.3);
+  }
+
   @media (max-width: $tablet-width) {
     margin-top: 0;
   }
