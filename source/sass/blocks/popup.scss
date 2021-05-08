@@ -74,6 +74,7 @@
 
 .popup__button {
   width: 411px;
+  margin-bottom: 40px;
 
   &:hover {
     background-color: rgba($white, 0.3);
@@ -103,4 +104,44 @@
   &:active {
     background-color: rgba($white, 0.1);
   }
+}
+
+.popup__checkbox-label {
+  width: 337px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.popup__checkbox {
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  opacity: 0.8;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 1px solid $white;
+    top: 3px;
+    left: -36px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 5px;
+    top: 8px;
+    left: -32px;
+    display: none;
+  }
+}
+
+.popup__checkbox-label input:checked + .popup__checkbox::after {
+  display: block;
 }
