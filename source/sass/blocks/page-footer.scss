@@ -1,5 +1,28 @@
 .page-footer {
   padding-top: 65px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1892px;
+    height: 1px;
+    background-color: rgba($dark-grey, 0.2);
+    bottom: 51px;
+    left: 4px;
+
+    @media (max-width: $desktop-width) {
+      width: 760px;
+      left: 66px;
+      bottom: 58px;
+    }
+
+    @media (max-width: $tablet-width) {
+      width: 310px;
+      left: 86px;
+      bottom: 123px;
+    }
+  }
 
   @media (max-width: $desktop-width) {
     position: relative;
@@ -144,29 +167,6 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 1900px;
-    height: 1px;
-    background-color: rgba($dark-grey, 0.2);
-    top: -2px;
-    left: -247px;
-
-    @media (max-width: $desktop-width) {
-      width: 760px;
-      left: -30px;
-      top: -9px;
-    }
-
-    @media (max-width: $tablet-width) {
-      width: 310px;
-      top: 107px;
-      left: -11px;
-    }
-  }
 
   @media (max-width: $desktop-width) {
     width: 717px;
@@ -200,16 +200,16 @@
 
   @media (max-width: $desktop-width) {
     position: absolute;
-    top: -373px;
-    left: 58.1%;
+    top: 23px;
+    left: 57.1%;
     transform: translateX(-50%);
     margin-left: 0;
     margin-right: 0;
   }
 
   @media (max-width: $tablet-width) {
-    top: -342px;
-    left: 60.1%;
+    top: 111px;
+    left: 56.1%;
     width: 290px;
   }
 }
