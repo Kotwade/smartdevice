@@ -102,6 +102,9 @@
   padding-left: 50px;
   padding-right: 50px;
   margin-top: 40px;
+  text-decoration: none;
+  display: block;
+  width: 180px;
 
   &:hover {
     background-color: rgba($blue, 0.5);

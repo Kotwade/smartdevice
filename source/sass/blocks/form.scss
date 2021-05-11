@@ -1,12 +1,12 @@
 .form {
   background-color: $blue;
-  background-image: url("../img/form-background-1.png"), url("../img/form-background-2.png"), url("../img/form-background-3.png"), url("../img/form-background-4.png");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: 1641px 42px, 1577px 288px, 209px -61px, 176px 206px;
-  background-size: 14%, 18%, 33.5%, 19.5%;
+  background-image: url("../img/paper-airplane.png"), url("../img/form-background-1.png"), url("../img/form-background-2.png"), url("../img/form-background-3.png"), url("../img/form-background-4.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 346px 161px, 1641px 42px, 1577px 288px, 209px -61px, 176px 206px;
+  background-size: 27%, 14%, 18%, 33.5%, 19.5%;
 
   @media (max-width: $desktop-width) {
-    background-size: 0, 0, 0, 0;
+    background-size: 0, 0, 0, 0, 0;
   }
 }
 
@@ -15,8 +15,6 @@
   margin: 0 auto;
   padding-top: 91px;
   padding-bottom: 111px;
-  display: flex;
-  justify-content: space-between;
 
   @media (max-width: $desktop-width) {
     width: 591px;
@@ -31,20 +29,13 @@
   }
 }
 
-.form__image-wrapper {
-  margin-top: 70px;
-  width: 511px;
-
-  @media (max-width: $desktop-width) {
-    display: none;
-  }
-}
-
 .form__wrapper {
   width: 580px;
+  margin-left: 626px;
 
   @media (max-width: $desktop-width) {
     width: 591px;
+    margin-left: 0;
   }
 
   @media (max-width: $tablet-width) {

@@ -120,6 +120,27 @@
   margin: 0;
   padding: 0;
   padding-left: 98px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 2px;
+    top: 17px;
+    left: 4px;
+    background-color: $white;
+
+    @media (max-width: $desktop-width) {
+      width: 33px;
+      top: 16px;
+      left: 3px;
+    }
+
+    @media (max-width: $tablet-width) {
+      top: 13px;
+    }
+  }
 
   @media (max-width: $desktop-width) {
     font-size: 18px;

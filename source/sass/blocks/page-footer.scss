@@ -13,7 +13,7 @@
 
     @media (max-width: $desktop-width) {
       width: 760px;
-      left: 66px;
+      left: 4px;
       bottom: 58px;
     }
 
@@ -65,13 +65,13 @@
       width: 760px;
       height: 1px;
       background-color: rgba($dark-grey, 0.2);
-      bottom: -26px;
+      bottom: -20px;
       left: -25px;
     }
 
     @media (max-width: $tablet-width) {
       width: 310px;
-      bottom: -48px;
+      bottom: -42px;
       left: -11px;
     }
   }
@@ -124,7 +124,7 @@
 
   @media (max-width: $desktop-width) {
     width: 707px;
-    margin-top: 65px;
+    margin-top: 59px;
   }
 
   @media (max-width: $tablet-width) {
