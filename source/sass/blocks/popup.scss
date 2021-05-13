@@ -112,6 +112,10 @@
   margin: 0 auto;
 }
 
+.popup__checkbox-label label {
+  cursor: pointer;
+}
+
 .popup__checkbox {
   font-size: 14px;
   line-height: 16px;

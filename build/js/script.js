@@ -5,6 +5,7 @@ var popup = document.querySelector('.popup');
 var popupOpen = document.querySelector('.contacts-header__button');
 var popupClose = popup.querySelector('.popup__button-cross');
 var overlay = document.querySelector('.overlay');
+var pageBody = document.querySelector('.page-body');
 
 var onPopupEscPress = function (evt) {
   if (evt.key === ESC_KEY) {
@@ -15,12 +16,14 @@ var onPopupEscPress = function (evt) {
 var openPopup = function () {
   popup.classList.remove('popup--hidden');
   overlay.classList.remove('overlay--hidden');
+  pageBody.classList.add('page-body--opened');
   document.addEventListener('keydown', onPopupEscPress);
 };
 
 var closePopup = function () {
   popup.classList.add('popup--hidden');
   overlay.classList.add('overlay--hidden');
+  pageBody.classList.remove('page-body--opened');
   document.removeEventListener('keydown', onPopupEscPress);
 };
 
