@@ -3,6 +3,7 @@
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: 558px 145px, 0 448px, 198px 43px, 1553px 392px;
   background-size: 46%, 30%, 18%, 18%;
+  background-attachment: local;
 
   @media (max-width: $desktop-width) {
     background-position: 215px 97px;
